@@ -1,10 +1,11 @@
 import abi from "./contract/chai.json";
 import { useState, useEffect } from "react";
-import { ethers } from "ethers";
+// import { ethers } from "ethers";
 import Buy from "./components/Buy";
 import Memos from "./components/Memos";
 import chai from "./chai.png";
 import "./App.css";
+const ethers = require("ethers");
 
 function App() {
   const [state, setState] = useState({
@@ -15,7 +16,7 @@ function App() {
   const [account, setAccount] = useState("None");
   useEffect(() => {
     const connectWallet = async () => {
-      const contractAddress = "0x46436dcb1b29b111a00bb61f5475b420ef1104eb";
+      const contractAddress = "0xDF91376c536D2502e35b45017188c6936c524aB2";
       const contractABI = abi.abi;
       try {
         const { ethereum } = window;

@@ -1,4 +1,6 @@
-import { ethers } from "ethers";
+// import { ethers } from "ethers";
+const ethers = require("ethers");
+
 const Buy = ({ state }) => {
   const buyChai = async (event) => {
     event.preventDefault();
