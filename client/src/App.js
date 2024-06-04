@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // import { ethers } from "ethers";
 import Buy from "./components/Buy";
 import Memos from "./components/Memos";
-import chai from "./chai.png";
+import chai from "./donation.webp";
 import "./App.css";
 const ethers = require("ethers");
 
